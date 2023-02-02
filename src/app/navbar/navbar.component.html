@@ -1,0 +1,40 @@
+<!-- ------------navbar-------------- -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" class="rounded mx-auto d-block" width="50"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a  href="" class="nav-link" routerLink="/home" routerLinkActive="active"> <strong>Home</strong></a>
+          </li>
+
+          <li class="nav-item">
+            <a  href="" class="nav-link" routerLink="/usuarios" routerLinkActive="active"> <strong>Usuarios</strong></a>
+          </li>
+
+          <div class="dropdown">
+            <a href="#" class="nav-link text-white text-decoration-none " data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <strong>Contacto</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+              <li><a class="dropdown-item" routerLink="/listar">Lista</a></li>
+              <li><a class="dropdown-item" routerLink="/contacto">Formulario de Contacto</a></li>
+              
+            </ul>
+          </div>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>

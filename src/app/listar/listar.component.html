@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h2 class="h2">Lista de usuario</h2>
+</div>
+<div class="pricing-header mx-auto">
+    <div class="table-responsive">
+        
+        <table class="table table-bordered table-responsive-sm table-responsive-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Dni</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Mensaje</th>
+                    <th scope="col" class="text-center">Edit</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of Users">
+                    <th scope="row"> {{user.dni}} </th>
+                    <td> {{user.nombre}} </td>
+                    <td> {{user.correo}} </td>
+                    <td> {{user.mensaje}} </td>
+                    <td id="botones" class="text-center action-block"> 
+                        <a href="" class="mr-2 btn btn-outline-primary btn-sm" routerLink="/modificar/:{{user.dni}}" routerLinkActive="active">
+                            Editar
+                        </a>
+                        <span class="btn btn-outline-danger btn-sm m-2" (click)="deleteContact(user)">
+                            Eliminar 
+                        </span>
+                    </td>
+
+                </tr>
+            </tbody>
+
+        </table>
+            
+        
+
+    </div>
+
+</div>
+

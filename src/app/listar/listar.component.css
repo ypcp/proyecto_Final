@@ -1,0 +1,17 @@
+h2{
+    font-family: Lucida Handwriting;
+    text-align: center;
+}
+th,td{
+    font-style: italic;
+    font-size: 10pt;
+    font-family: monospace;
+    
+    text-align: center;
+
+}
+table{
+    border: 10px;
+    color: black;
+    font-size: 20px;
+}
